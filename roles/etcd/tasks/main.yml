@@ -1,6 +1,6 @@
 ---
 - include: fedora.yml
-  when: is_rhel7.rc != 0
+  when: is_rhel7.rc != 0 and is_centos7.rc != 0
 
 - include: rhel7.yml
   when: is_rhel7.rc == 0
